@@ -1,6 +1,6 @@
 use std::time::Instant;
 
-use euler::problems::p0001;
+use euler::problems::{p0001, p0002};
 
 fn main() {
     let problem_number = std::env::args().nth(1).expect("expect a problem number");
@@ -9,6 +9,7 @@ fn main() {
 
     match problem_number.as_str() {
         "1" => p0001::solve(),
+        "2" => p0002::solve(),
         _ => println!("Unknown problem number"),
     }
 
